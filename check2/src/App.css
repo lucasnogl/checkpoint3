@@ -1,0 +1,250 @@
+.dashboard-gamma-container {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #0d0d1a; /* Cor de fundo escura */
+    box-sizing: border-box;
+}
+
+.dashboard-gamma {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    background-color: #111827; /* gray-900 */
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    border: 2px solid #be185d; /* pink-700 */
+    color: #e0e0ff;
+    max-width: 800px;
+    margin: auto;
+}
+
+.header-gamma {
+    padding-bottom: 12px;
+    border-bottom: 2px solid #be185d; /* pink-700 */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.titulo-gamma {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #f472b6; /* pink-400 */
+    letter-spacing: 0.05em;
+}
+
+.piloto-gamma {
+    font-size: 0.875rem;
+    color: #9ca3af; /* gray-400 */
+    margin-top: 4px;
+}
+.nome-piloto-gamma { font-weight: 700; color: #fff; }
+
+.data-hora-gamma {
+    font-size: 0.75rem;
+    font-family: monospace;
+    color: #a3e635; /* lime-500 */
+    text-align: right;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.main-content-gamma {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Cores Neon */
+.text-pink-gamma { color: #f472b6; }
+.text-lime-gamma { color: #bef264; }
+.shadow-pink-gamma { text-shadow: 0 0 5px #f472b6; }
+.shadow-lime-gamma { text-shadow: 0 0 5px #bef264; }
+
+/* Data Panel Gamma */
+.data-panels-grid-gamma {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+.data-panel-gamma {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #11182780; /* gray-900/50 */
+    border: 1px solid #374151; /* gray-700 */
+    transition: all 0.3s;
+}
+.data-panel-gamma:hover { border-color: #f472b6cc; }
+
+.title-gamma { font-size: 0.75rem; font-family: monospace; color: #9ca3af; text-transform: uppercase; }
+.value-gamma { 
+    font-size: 1.5rem; 
+    font-weight: 800; 
+    letter-spacing: -0.05em; 
+    margin-top: 4px;
+}
+.unit-gamma { font-size: 1rem; font-weight: 300; margin-left: 4px; }
+
+
+/* Mission Bar Gamma (Barra de Progresso) */
+.mission-bar-gamma {
+    position: relative;
+    height: 24px;
+    width: 100%;
+    background-color: #1f2937; /* gray-800 */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #374151;
+}
+.mission-bar-fill-gamma {
+    position: absolute;
+    height: 100%;
+    transition: all 0.7s;
+}
+.alert-fill-gamma { background-color: #db2777; /* pink-600 */ }
+.normal-fill-gamma { background-color: #65a30d; /* lime-600 */ }
+
+.mission-percent-gamma {
+    position: absolute;
+    left: 8px;
+    top: 2px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fff;
+    z-index: 10;
+}
+.mission-message-gamma {
+    position: absolute;
+    right: 8px;
+    top: 2px;
+    font-size: 0.75rem;
+    font-family: monospace;
+    z-index: 10;
+}
+.mission-message-gamma.alert-text { color: #000; }
+.mission-message-gamma.normal-text { color: #1f2937; }
+
+
+/* Destination Info Gamma */
+.destination-info-gamma {
+    padding: 16px;
+    background-color: #1f2937;
+    border-radius: 8px;
+    border: 1px solid #bef2644d; /* lime-500/30 */
+    line-height: 1.5;
+}
+.destination-title-gamma {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #a3e635; /* lime-300 */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.destination-title-gamma span { font-size: 1.25rem; } /* Tamanho do Emoji */
+
+.destination-desc-gamma {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    border-bottom: 1px solid #374151;
+    padding-bottom: 8px;
+    margin-top: 8px;
+    font-style: italic;
+}
+.destination-details-gamma {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-top: 8px;
+    color: #fff;
+}
+.speed-gamma { font-family: monospace; color: #f472b6; }
+.weather-gamma { font-weight: 600; }
+
+/* System Readings Gamma */
+.system-readings-title-gamma {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #a3e635;
+    border-bottom: 1px solid #84cc1680;
+    padding-bottom: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.system-readings-grid-gamma {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+.reading-item-gamma {
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    border-width: 2px;
+    background-color: #1f293780;
+}
+.normal-reading { border-color: #bef26480; }
+.alert-reading { 
+    border-color: #f472b6;
+    background-color: #83184333;
+    box-shadow: 0 0 10px rgba(244, 114, 182, 0.5);
+}
+.reading-key-gamma { font-size: 0.875rem; font-weight: 700; color: #d1d5db; }
+.reading-value-gamma { font-size: 0.75rem; font-family: monospace; margin-top: 4px; }
+
+
+/* Command Log Gamma */
+.command-log-gamma {
+    padding: 16px;
+    background-color: #1f2937;
+    border-radius: 8px;
+    border: 1px solid #f472b64d;
+}
+.log-header-gamma {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #f472b6;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.log-list-gamma {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    height: 128px;
+    overflow-y: auto;
+}
+.log-item-gamma {
+    color: #d1d5db;
+    display: flex;
+    margin-bottom: 4px;
+}
+.log-code-gamma {
+    color: #f472b6;
+    font-family: monospace;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+/* Scrollbar Customizado */
+.custom-scrollbar-gamma {
+    scrollbar-width: thin;
+    scrollbar-color: #4a5568 #1f2937;
+}
+.custom-scrollbar-gamma::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar-gamma::-webkit-scrollbar-thumb {
+    background-color: #4a5568;
+    border-radius: 3px;
+}
+.custom-scrollbar-gamma::-webkit-scrollbar-track {
+    background-color: #1f2937;
+}
